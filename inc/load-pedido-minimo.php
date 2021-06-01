@@ -18,14 +18,14 @@ function pedido_minimo_wc_function() {
 			$pedido_minimo_value = get_option( 'request-minimo-wc-quantity', false );
 			$pedido_minimo_quantity = get_option( 'pedido-minimo-wc-quantity', false );
 
-	        if( $pedido_minimo_operation == 'valor' ) {
+	        if( $pedido_minimo_operation == 'value' ) {
 		        if( $total_cart_value < $pedido_minimo_value ) {
 					$balance = wc_price($pedido_minimo_value - $total_cart_value);
-					$message = '<p>'.esc_html__( 'Usted necesita comprar más %s para alcanzar el valor mínimo de la tienda.', 'pedido-minimo-wc').'</p></div>';
+					$message = '<p>'.esc_html__( 'You need to buy more than% s to reach the minimum order value.', 'pedido-minimo-wc').'</p></div>';
 
 					if ( $total_cart_value !== 0 ) {
 							$moneda = get_woocommerce_currency_symbol();
-				            wc_add_notice( sprintf( '<div class="alert_pedido_minimo"><p>'.esc_html__('La solicitud debe tener un valor mínimo de', 'pedido-minimo-wc').' <strong>'.$moneda.' %s</strong>.</p>'.'<p>'.esc_html__('El valor total de su pedido actual es', 'pedido-minimo-wc').' <strong> %s</strong>.</p>'.$message, wc_price($pedido_minimo_value), wc_price($total_cart_value), $balance ), 'error' );
+				            wc_add_notice( sprintf( '<div class="alert_pedido_minimo"><p>'.esc_html__('The request must have a minimum value of ', 'pedido-minimo-wc').' <strong>'.$moneda.' %s</strong>.</p>'.'<p>'.esc_html__(' The total value of your current order is', 'pedido-minimo-wc').' <strong> %s</strong>.</p>'.$message, wc_price($pedido_minimo_value), wc_price($total_cart_value), $balance ), 'error' );
 					}
 	        	}
     		} elseif( $pedido_minimo_operation == 'quantity' ) {
@@ -36,7 +36,7 @@ function pedido_minimo_wc_function() {
 					} elseif ($balance > 1) {
 						$txtItem = 'items';
 					}
-					$message = '<p>'.esc_html__( 'Usted necesita comprar %s '.$txtItem.' para alcanzar la cantidad mínima de la tienda.', 'pedido-minimo-wc').'</p></div>';
+					$message = '<p>'.esc_html__( 'You need to buy %s ', 'pedido-minimo-wc') . $txtItem . esc_html__(' to reach the minimum quantity of the store', 'pedido-minimo-wc').'</p></div>';
 
 					if ( $total_cart_quantity !== 0 ) {
 						if ( $total_cart_quantity == 1 ) {
@@ -46,7 +46,7 @@ function pedido_minimo_wc_function() {
 						}
 
 				            wc_add_notice( sprintf( '<div class="alert_pedido_minimo">
-				            	<p>'.esc_html__('La solicitud debe tener la cantidad mínima de', 'pedido-minimo-wc').' <strong>%s items</strong>.</p>'.'<p>'.esc_html__('Su pedido ahora tiene', 'pedido-minimo-wc').' <strong> %s '.$txtItem.'</strong>.</p>'.$message, $pedido_minimo_quantity, $total_cart_quantity, $balance ), 'error' );
+				            	<p>'.esc_html__('The application must have the minimum quantity of', 'pedido-minimo-wc').' <strong>%s items</strong>.</p>'.'<p>'.esc_html__('Your order now has', 'pedido-minimo-wc').' <strong> %s '.$txtItem.'</strong>.</p>'.$message, $pedido_minimo_quantity, $total_cart_quantity, $balance ), 'error' );
 					}
 	        	}
     		}

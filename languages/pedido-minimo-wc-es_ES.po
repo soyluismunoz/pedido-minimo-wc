@@ -1,0 +1,127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pedido Mínimo Wc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-31 21:24+0000\n"
+"PO-Revision-Date: 2021-05-31 21:39+0000\n"
+"Last-Translator: luis munoz\n"
+"Language-Team: Español\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.2\n"
+"X-Domain: pedido-minimo-wc"
+
+#: inc/load-pedido-minimo.php:39
+msgid " to reach the minimum quantity of the store"
+msgstr " para alcanzar la cantidad mínima de la tienda"
+
+#: inc/load-admin-settings.php:103
+msgid "Activate or deactivate the plugin."
+msgstr "Activar o desactivar el complemento."
+
+#. URI of the plugin
+msgid "https://github.com/soyluismunoz/pedido-minimo-wc"
+msgstr "https://github.com/soyluismunoz/pedido-minimo-wc"
+
+#. Author URI of the plugin
+msgid "https://soyluismunoz.com"
+msgstr "https://soyluismunoz.com"
+
+#. Author of the plugin
+msgid "Luis Munoz"
+msgstr "Luis Munoz"
+
+#: inc/load-admin-settings.php:125
+msgid "Minimum quantity of items in the order"
+msgstr "Cantidad mínima de artículos en el pedido"
+
+#: inc/load-admin-settings.php:118
+msgid "Minimum value of the request in "
+msgstr "Valor mínimo de la solicitud en"
+
+#: inc/load-admin-settings.php:107
+msgid "operating mode"
+msgstr "modo operativo"
+
+#: inc/load-admin-settings.php:78
+msgid "Pedido Mínimo WC"
+msgstr "Pedido Mínimo WC"
+
+#. Name of the plugin
+msgid "Pedido Mínimo Wc"
+msgstr "Pedido Mínimo Wc"
+
+#: inc/load-admin-settings.php:95
+msgid "Pedido Mínimo wc"
+msgstr "Pedido Mínimo wc"
+
+#: inc/load-admin-settings.php:101
+msgid "Plugin activated"
+msgstr "Plugin activado"
+
+#. Description of the plugin
+msgid ""
+"Plugin para configurar el valor mínimo o la cantidad mínima de elementos "
+"para la finalización de pedidos en WooCommerce."
+msgstr ""
+"Plugin para configurar el valor mínimo o la cantidad mínima de elementos "
+"para la finalización de pedidos en WooCommerce."
+
+#: inc/load-admin-settings.php:114
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: inc/load-admin-settings.php:120
+msgid "Requests with a lower value are not completed."
+msgstr "Las solicitudes con un valor inferior no se completan."
+
+#: inc/load-admin-settings.php:127
+msgid "Requests with fewer items are not finalized."
+msgstr "Las solicitudes con menos elementos no se finalizan."
+
+#: inc/load-admin-settings.php:132
+msgid "Select a user role"
+msgstr "Seleccione un rol de usuario"
+
+#: inc/load-admin-settings.php:109
+msgid "Select if the plugin will work by value or quantity."
+msgstr "Seleccione si el complemento funcionará por valor o cantidad."
+
+#: inc/load-pedido-minimo.php:49
+msgid "The application must have the minimum quantity of"
+msgstr "La solicitud debe tener la cantidad mínima de"
+
+#: inc/load-admin-settings.php:134
+msgid "The plugin rules only apply to the selected user role."
+msgstr ""
+"Las reglas del complemento solo se aplican al rol de usuario seleccionado."
+
+#: inc/load-pedido-minimo.php:28
+msgid "The request must have a minimum value of"
+msgstr "La solicitud debe tener un valor mínimo de"
+
+#: inc/load-pedido-minimo.php:28
+msgid "The total value of your current order is"
+msgstr "El valor total de su pedido actual es"
+
+#: inc/load-admin-settings.php:113
+msgid "value"
+msgstr "valor"
+
+#: inc/load-pedido-minimo.php:39
+#, php-format
+msgid "You need to buy %s "
+msgstr "Necesitas comprar %s  "
+
+#: inc/load-pedido-minimo.php:24
+#, php-format
+msgid "You need to buy more than% s to reach the minimum order value."
+msgstr "Debe comprar más de %s para alcanzar el valor de pedido mínimo."
+
+#: inc/load-pedido-minimo.php:49
+msgid "Your order now has"
+msgstr "Tu pedido ahora tiene"
